@@ -9,18 +9,14 @@ Algoritmo ejer_24
 		si edad <18 Entonces
 			menor=menor+1;
 		SiNo
-			si edad >=18 Entonces
+			si edad >=18 y edad <=59 Entonces
 				mayor=mayor+1;
 			SiNo
-				si edad <= 59 Entonces
-					mayor=mayor+1;
-				SiNo
-					si edad >=60 Entonces
-						adulto=adulto+1;
+				si edad >=60 Entonces
+					adulto=adulto+1;
 					FinSi
 				FinSi
 			FinSi
-		FinSi
 	FinPara
 	mostrar"la cantidad de menores de edad es: ",menor;
 	mostrar "la  cantidad de mayores de edad es: ", mayor;
